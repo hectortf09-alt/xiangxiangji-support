@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="箱箱记技术支持：查阅收纳记录、搜索、清单导出与完整备份的常见问题，联系开发者获得帮助。">
+  <meta name="theme-color" content="#0868ed">
+  <title>技术支持 · 箱箱记</title>
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <style>
+    :root { color-scheme: light; --ink: #192b43; --muted: #52657b; --blue: #0868ed; --line: #dce5ef; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f7f9fc; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 16px; line-height: 1.8; }
+    a { color: #0759cd; text-underline-offset: 4px; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #0868ed; outline-offset: 5px; border-radius: 4px; }
+    .skip { position: absolute; left: 20px; top: -80px; padding: 8px 16px; background: white; z-index: 2; }
+    .skip:focus { top: 12px; }
+    .wrap { width: min(100% - 48px, 960px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: white; }
+    nav { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; gap: 12px; align-items: center; color: var(--ink); text-decoration: none; font-size: 20px; font-weight: 650; }
+    .brand img { width: 44px; height: 44px; border-radius: 12px; }
+    .nav-link { font-size: 14px; text-decoration: none; }
+    .hero { padding: 65px 0 48px; display: grid; grid-template-columns: 1fr 144px; gap: 40px; align-items: center; }
+    .eyebrow { margin: 0 0 12px; font-size: 13px; font-weight: 650; letter-spacing: .12em; color: #47627e; }
+    h1 { margin: 0 0 14px; font-size: clamp(32px, 5vw, 46px); line-height: 1.35; letter-spacing: -.04em; }
+    h1 span { display: inline-block; }
+    .intro { margin: 0; color: var(--muted); font-size: 17px; max-width: 610px; }
+    .hero img { width: 144px; height: 144px; border-radius: 34px; box-shadow: 0 12px 30px #0868ed1a; }
+    .contact { display: grid; grid-template-columns: 1fr 1.1fr; gap: 36px; padding: 30px 34px; background: #eaf2ff; border: 1px solid #cedffa; border-radius: 20px; }
+    h2 { margin: 0 0 8px; font-size: 23px; line-height: 1.5; }
+    .contact p { margin: 0; color: #3f5776; }
+    .contact .email { display: inline-block; margin: 10px 0 8px; font-weight: 650; overflow-wrap: anywhere; }
+    .contact ul { margin: 7px 0 0; padding-left: 20px; font-size: 14px; color: #3f5776; }
+    .section { padding-top: 52px; }
+    .section-intro { margin: 0 0 22px; color: var(--muted); }
+    .questions { background: white; padding: 0 28px; border: 1px solid var(--line); border-radius: 20px; }
+    details + details { border-top: 1px solid var(--line); }
+    summary { padding: 19px 0; cursor: pointer; font-weight: 600; line-height: 1.6; }
+    details p { margin: 0 0 20px; padding-right: 16px; color: var(--muted); }
+    .data { padding: 26px 30px; background: white; border-left: 3px solid var(--blue); border-radius: 0 16px 16px 0; }
+    .data h2 { font-size: 20px; }
+    .data p { margin: 8px 0 0; color: var(--muted); }
+    footer { margin-top: 52px; padding: 26px 0 34px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 36px, 960px); }
+      nav { min-height: 74px; }
+      .brand { font-size: 18px; }
+      .hero { padding: 40px 0 30px; gap: 18px; grid-template-columns: 1fr 76px; }
+      .hero img { width: 76px; height: 76px; border-radius: 18px; }
+      .intro { font-size: 15px; }
+      .contact { grid-template-columns: 1fr; padding: 24px; gap: 22px; }
+      .section { padding-top: 36px; }
+      .questions { padding-inline: 20px; }
+      .data { padding: 22px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳转到正文</a>
+  <header>
+    <nav class="wrap" aria-label="主导航">
+      <a class="brand" href="./"><img src="app-icon.png" width="44" height="44" alt=""><span>箱箱记</span></a>
+      <a class="nav-link" href="#contact">联系支持 ↗</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">箱箱记 / 技术支持</p>
+        <h1 id="page-title"><span>收起来，</span><span>也找得到。</span></h1>
+        <p class="intro">关于收纳记录、搜索找物、清单导出和备份恢复，在这里找到帮助。</p>
+      </div>
+      <img src="app-icon.png" alt="箱箱记 App 图标" width="144" height="144">
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">联系开发者</h2>
+        <p>遇到问题，或有想分享的建议？<br>欢迎通过电子邮件联系我们。</p>
+        <a class="email" href="mailto:tengfei.he@aliyun.com?subject=%E7%AE%B1%E7%AE%B1%E8%AE%B0%20%E6%94%AF%E6%8C%81%E4%B8%8E%E5%8F%8D%E9%A6%88">tengfei.he@aliyun.com</a>
+      </div>
+      <div>
+        <p>为了更快了解问题，请在邮件中附上：</p>
+        <ul>
+          <li>设备型号、iOS / iPadOS 版本和 App 版本</li>
+          <li>遇到的情况，以及出现问题前的操作步骤</li>
+          <li>如有必要，附上已遮挡个人信息的截图</li>
+        </ul>
+        <p style="font-size: 13px; margin-top: 12px">无需发送完整备份或私人照片。</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="faq-title">
+      <h2 id="faq-title">常见问题</h2>
+      <p class="section-intro">从第一次记录，到换机时的备份。</p>
+      <div class="questions">
+        <details open>
+          <summary>如何开始记录和查找物品？</summary>
+          <p>创建项目，添加箱子，再记录箱内物品的名称、数量和照片。记下箱子当前位置，需要时通过搜索查找物品及其所属箱子。照片是可选项，也可以只用文字记录。</p>
+        </details>
+        <details>
+          <summary>必须注册账号或联网吗？</summary>
+          <p>不需要注册或登录。记录、搜索、清单生成与完整备份在当前设备完成，可以离线使用。如果从系统相册选择仅存于云端的照片，照片下载由系统及你的设置控制。</p>
+        </details>
+        <details>
+          <summary>iPhone 和 iPad 会自动同步吗？</summary>
+          <p>不会。两台设备各自保存本机记录。需要迁移时，请在原设备的“设置与备份”中导出完整备份，传到另一台设备，再选择“从备份恢复”。恢复会整体替换目标设备上的现有记录，不会合并；操作前请先为目标设备另存一份完整备份。</p>
+        </details>
+        <details>
+          <summary>PDF、CSV 和完整备份有什么区别？</summary>
+          <p>PDF 和 CSV 清单用于查看、核对与交接，不能恢复 App 数据。需要恢复记录或迁移到另一台设备时，请使用“导出完整备份”生成的 .boxlistbackup 文件，完整备份包含记录与照片。</p>
+        </details>
+        <details>
+          <summary>卸载、换机之前需要做什么？</summary>
+          <p>卸载会移除本机记录。请先导出完整备份，保存到系统“文件”中你信任的位置，并确认备份文件已妥善保留。开发者不保存你的记录，无法从服务器找回本机数据。</p>
+        </details>
+        <details>
+          <summary>箱子当前位置和计划位置有什么区别？</summary>
+          <p>箱子当前位置表示整箱现在放在哪里；整箱计划暂放位置表示搬入后打算把箱子放在哪里；物品计划收纳位置表示拆箱后打算把物品收到哪里。计划不会自动变成实际位置，请根据整理进度手动更新记录。</p>
+        </details>
+        <details>
+          <summary>照片无法添加，或备份无法恢复怎么办？</summary>
+          <p>拍摄照片时，请检查系统“设置”中是否允许箱箱记使用相机；也可以尝试从相册选择照片。恢复时，请确认选择的是完整的 .boxlistbackup 文件，并检查设备可用存储空间。若仍有问题，请保留原备份并联系支持，附上错误提示；不要先卸载 App。</p>
+        </details>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="data-title">
+      <div class="data">
+        <h2 id="data-title">关于你的记录</h2>
+        <p>项目、箱子、物品和照片保存在当前设备，不上传给开发者。导出、备份和分享由你主动发起，保存位置与接收方由你选择。系统级设备备份由设备与 iCloud 设置控制，与 App 自动同步是不同的功能。</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>箱箱记 · 物品收纳记录与查找</span><span>适用于 iPhone 与 iPad</span></div></footer>
+</body>
+</html>
