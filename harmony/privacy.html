@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="箱箱记隐私政策：了解本机记录与照片、系统权限、备份分享、数据删除和联系支持的信息处理方式。">
+  <meta name="boxmory-platform" content="harmonyos">
+  <meta name="theme-color" content="#0868ed">
+  <title>隐私政策 · 箱箱记</title>
+  <link rel="icon" type="image/png" href="../app-icon.png">
+  <style>
+    :root { color-scheme: light; --ink: #192b43; --muted: #52657b; --blue: #0759cd; --line: #dce5ef; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f7f9fc; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 16px; line-height: 1.9; }
+    a { color: var(--blue); text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #0868ed; outline-offset: 5px; border-radius: 3px; }
+    .skip { position: absolute; left: 20px; top: -80px; padding: 8px 16px; background: white; z-index: 2; }
+    .skip:focus { top: 12px; }
+    .wrap { width: min(100% - 48px, 880px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); background: white; }
+    header nav { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; gap: 12px; align-items: center; color: var(--ink); text-decoration: none; font-size: 20px; font-weight: 650; }
+    .brand img { width: 44px; height: 44px; border-radius: 12px; }
+    .back { font-size: 14px; text-decoration: none; }
+    .hero { padding: 48px 0 28px; }
+    .eyebrow { margin: 0 0 8px; color: var(--muted); font-size: 13px; font-weight: 650; letter-spacing: .12em; }
+    h1 { margin: 0 0 10px; font-size: clamp(32px, 5vw, 42px); line-height: 1.4; letter-spacing: -.04em; }
+    .date { margin: 0; color: var(--muted); font-size: 14px; }
+    .summary { padding: 24px 28px; background: #eaf2ff; border: 1px solid #cedffa; border-radius: 18px; }
+    .summary p { margin: 0; }
+    .summary p + p { margin-top: 10px; color: #3f5776; }
+    .contents { margin: 26px 0; padding: 20px 26px; border: 1px solid var(--line); border-radius: 16px; background: white; }
+    .contents strong { font-size: 15px; }
+    .contents ol { columns: 2; gap: 34px; padding-left: 22px; margin: 8px 0 0; font-size: 14px; }
+    .contents li { break-inside: avoid; padding: 2px 0; }
+    article { padding: 8px 32px 26px; border: 1px solid var(--line); border-radius: 18px; background: white; }
+    section { padding-top: 26px; scroll-margin-top: 20px; }
+    h2 { margin: 0 0 10px; font-size: 21px; line-height: 1.6; }
+    p { margin: 0 0 12px; }
+    section p:last-child { margin-bottom: 0; }
+    ul { margin: 8px 0 12px; padding-left: 23px; }
+    li { padding: 3px 0; }
+    .muted { color: var(--muted); }
+    footer { margin-top: 36px; padding: 24px 0 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; }
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 36px, 880px); }
+      header nav { min-height: 74px; }
+      .brand { font-size: 18px; }
+      .hero { padding-top: 32px; }
+      .summary { padding: 20px; }
+      .contents { padding: 18px 20px; }
+      .contents ol { columns: 1; }
+      article { padding: 0 20px 24px; }
+      h2 { font-size: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print { body { background: white; } .contents, .skip, header { display: none; } article { border: 0; padding: 0; } .wrap { width: 100%; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳转到正文</a>
+  <header>
+    <nav class="wrap" aria-label="主导航">
+      <a class="brand" href="https://hectortf09-alt.github.io/xiangxiangji-support/"><span>箱箱记</span></a>
+      <a class="back" href="https://hectortf09-alt.github.io/xiangxiangji-support/">技术支持 ↗</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <div class="hero">
+      <p class="eyebrow">箱箱记 / 隐私与数据</p>
+      <h1>隐私政策</h1>
+      <p class="date">更新日期：2026 年 11 月 10 日<br>生效日期：2026 年 11 月 10 日</p>
+    </div>
+    <div class="summary" role="note">
+      <p><strong>你的收纳记录与照片保存在设备本地，不上传给箱箱记开发者。</strong></p>
+      <p>箱箱记无需注册或登录，不提供业务服务器，不集成广告、用户行为统计或跨 App 跟踪服务。你主动导出、分享文件、访问网页或发送邮件时的信息处理方式，见下文说明。</p>
+    </div>
+    <nav class="contents" aria-label="隐私政策目录">
+      <strong>本政策包含</strong>
+      <ol>
+        <li><a href="#scope">适用范围与联系方式</a></li>
+        <li><a href="#local">本机处理的信息</a></li>
+        <li><a href="#permissions">系统权限与文件访问</a></li>
+        <li><a href="#sharing">导出、备份与分享</a></li>
+        <li><a href="#retention">保存、删除与个人选择</a></li>
+        <li><a href="#third-party">第三方组件与系统服务</a></li>
+        <li><a href="#support">主动联系支持</a></li>
+        <li><a href="#website">公开网页的访问</a></li>
+        <li><a href="#security">数据安全</a></li>
+        <li><a href="#children">未成年人使用</a></li>
+        <li><a href="#changes">政策更新</a></li>
+      </ol>
+    </nav>
+    <article aria-label="隐私政策正文">
+      <section id="scope">
+        <h2>1. 适用范围与联系方式</h2>
+        <p>箱箱记由赫腾飞（个人开发者，以下简称“我们”）开发和提供。本政策说明你使用箱箱记 HarmonyOS 应用（以下简称“本应用”）时涉及的信息处理方式，适用于当前以本地存储为基础的离线版本。</p>
+        <p>如对本政策或数据处理有疑问，可联系：<a href="mailto:tengfei.he@aliyun.com">tengfei.he@aliyun.com</a>。</p>
+      </section>
+      <section id="local">
+        <h2>2. 本机处理的信息</h2>
+        <p>为提供收纳记录、查找与整理功能，本应用在你的设备上处理和保存你主动输入或选择的内容，包括：</p>
+        <ul>
+          <li>项目、箱子和物品名称、数量、分组或标签、排序等记录。</li>
+          <li>你手动填写的箱子当前位置、整箱暂放计划及物品收纳计划。</li>
+          <li>你拍摄或从系统照片选择器中选择的图片，以及用于显示的压缩副本和缩略图。</li>
+          <li>为完成本机搜索、清单生成及备份导入／恢复而处理的查询和文件内容。</li>
+        </ul>
+        <p>拍照辅助使用随 App 分发的模型在本机处理原图、编号框和建议名称，不上传图片或调用云识别。建议经你确认后才写入正式箱内记录。待归箱草稿、操作回执、最近搜索与本项目输入建议保存在本机；翻译资源随包提供。完整备份包含草稿，但不迁移可执行撤销能力。</p>
+        <p>这些内容用于本应用功能，不会自动发送给我们，也不会用于广告、出售、用户画像或跨 App 跟踪。位置字段由你手动输入，本应用不通过定位服务获取设备位置。</p>
+      </section>
+      <section id="permissions">
+        <h2>3. 系统权限与文件访问</h2>
+        <ul>
+          <li><strong>相机：</strong>仅在你主动选择拍照时打开系统相机，用于为箱子或物品添加图片。相机不可用时仍可使用相册和文字记录。</li>
+          <li><strong>照片：</strong>通过系统照片选择器读取你选定的图片，不主动遍历整个照片库，不修改相册原图。若图片仅存于云端，系统选择器可能按你的设置联网下载；该过程由你选择的照片服务处理。</li>
+          <li><strong>剪贴板：</strong>在粘贴清单面板主动点击系统粘贴按钮后，应用读取剪贴板文字，在本机生成候选草稿。</li>
+          <li><strong>文件：</strong>在你主动导出、导入或恢复备份时，通过系统文件选择／分享界面访问你选定的文件或保存位置。</li>
+          <li><strong>可用存储空间：</strong>导出、导入或恢复等操作可能在本机检查可用空间，以降低空间不足导致失败的风险，不将空间信息传给我们。</li>
+        </ul>
+        <p>你可以在系统选择器中取消照片或文件选择。本应用不为现有功能请求通讯录、麦克风或设备定位权限。</p>
+      </section>
+      <section id="sharing">
+        <h2>4. 导出、备份与分享</h2>
+        <p>清单导出、完整备份及系统分享均由你主动发起。导出的 PDF、CSV 或备份文件可能包含你选择导出的记录及照片，具体内容以应用内说明为准；完整备份包含记录与照片。</p>
+        <p>保存位置和接收方由你选择。若你选择云盘、邮件、聊天工具或其他设备，相关服务会按其自身规则处理你交付的文件；这不等于本应用向开发者上传数据。</p>
+        <p>设备之间通过手动备份迁移。通过备份迁移或恢复前，请阅读应用内确认说明，并先保留当前完整备份；恢复或替换操作可能改变或覆盖本机记录。PDF 和 CSV 清单不能替代用于恢复 App 数据的完整备份。</p>
+      </section>
+      <section id="retention">
+        <h2>5. 保存、删除与个人选择</h2>
+        <p>本机记录和照片保存在应用沙盒中，供你持续使用。你可以在应用内查看、修改或删除记录、移除图片、删除项目，也可以导出清单和完整备份。</p>
+        <p><strong>在系统中删除本应用及其数据，会移除本机应用数据；请以设备卸载时的系统提示为准。</strong>我们没有你的服务器副本，无法替你从服务器找回已经丢失的记录。操作前请确认完整备份已妥善保存。</p>
+        <p>应用内删除或移除本机应用数据，不会同时删除你之前导出到“文件管理”、云盘或其他接收方的副本，也不会修改相册原图。这些文件和系统备份需要你在相应位置单独管理。鸿蒙版在应用设置中提供手动完整备份。</p>
+        <p>由于本应用没有账号，不存在账号注销步骤。你可以停止添加照片、删除本机记录或停止使用应用。对通过邮件交给我们的信息，你可以按第 7 节联系并请求处理。</p>
+      </section>
+      <section id="third-party">
+        <h2>6. 第三方组件与系统服务</h2>
+        <p>本应用使用随包 YOLOv3-Tiny 模型通过 MindSpore Lite 在本机辅助识别，并使用 minizip-ng 在本机处理备份压缩文件，其开源许可证可在应用内“开源许可”中查看。本应用不集成第三方广告、用户行为统计、社交登录或跟踪 SDK，也不通过自建服务主动收集设备标识、使用行为或诊断日志。</p>
+        <p>华为应用市场分发、系统相机、照片选择器、系统分享及系统诊断由华为和你的设备设置管理。你选择的文件接收服务适用该服务的隐私规则。</p>
+      </section>
+      <section id="support">
+        <h2>7. 主动联系支持</h2>
+        <p>当你主动向 <a href="mailto:tengfei.he@aliyun.com">tengfei.he@aliyun.com</a> 发邮件时，我们会收到你的发件邮箱、邮件内容及你主动提供的附件或设备／版本信息。这些信息用于回复咨询、排查问题和处理你的请求，不用于广告营销或出售。</p>
+        <p>请只提供解决问题所必要的信息，截图中请遮挡私人内容；无需发送完整备份、证件或私人照片。我们仅在处理支持事项及满足适用法律要求所必要的期间保留沟通信息。你可以通过上述邮箱请求查阅、更正或删除我们持有的支持沟通信息；我们会在核实请求后按适用要求处理。</p>
+        <p>邮件的传输和托管还涉及你使用的邮件服务商及我们的收件邮箱服务商，其处理适用各自规则。本应用不会自动读取你的邮箱，也不会自动发送支持邮件或附件。</p>
+      </section>
+      <section id="website">
+        <h2>8. 公开网页的访问</h2>
+        <p>本隐私政策及技术支持页使用 GitHub Pages 托管。网页本身没有我们添加的广告、访问统计脚本、跟踪像素或信息提交表单。</p>
+        <p>浏览网页时，托管服务商 GitHub 会为安全目的记录访问者的 IP 地址。这属于网页访问产生的信息，不是本机收纳记录或照片上传。具体处理见 <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages 数据收集说明</a>和 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。</p>
+      </section>
+      <section id="security">
+        <h2>9. 数据安全</h2>
+        <p>本应用通过系统应用沙盒保存本机数据。请妥善保管设备并使用系统锁屏保护，定期将完整备份保存到可信位置，谨慎选择文件接收方。导出文件和备份可能包含私人照片与位置描述，请勿随意公开。</p>
+        <p>设备丢失、系统故障、存储损坏或误删可能导致数据丢失；我们无法保证本机数据或你自行保管的副本绝对安全，也无法远程访问或删除这些副本。</p>
+      </section>
+      <section id="children">
+        <h2>10. 未成年人使用</h2>
+        <p>本应用不以收集未成年人个人信息为目的，也不要求提供年龄或身份信息。未成年人使用照片、文件导出或联系支持功能时，建议由监护人协助管理权限和分享范围。监护人如对主动提供给我们的信息有疑问，可通过上述邮箱联系我们。</p>
+      </section>
+      <section id="changes">
+        <h2>11. 政策更新</h2>
+        <p>如本应用的数据处理方式发生变化，我们会更新本政策及更新日期，并按适用要求在应用或商店页面提供说明。若后续增加联网、账号、同步或其他涉及个人信息的新功能，将在启用相关处理前提供相应说明，并在依法需要时取得你的同意。尚未提供的功能不作为本政策下已发生的数据处理。</p>
+      </section>
+    </article>
+  </main>
+  <footer><div class="wrap"><span>箱箱记 · 物品收纳记录与查找</span><a href="https://hectortf09-alt.github.io/xiangxiangji-support/">返回技术支持</a></div></footer>
+</body>
+</html>
